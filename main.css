@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-button {
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    background-color: #555;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.login-pop {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.login-pop--container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.login-pop--container input[type=text],
+.login-pop--container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.login-pop--container input[type=text]:focus,
+.login-pop--container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.login-pop--container .btn {
+    background-color: #3537b8;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.login-pop--container .cancel {
+    background-color: #b61f1f;
+}
+
+.login-pop--container .btn:hover, 
+.login-button:hover {
+    opacity: 1;
+}
